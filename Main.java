@@ -6,14 +6,20 @@ public class Main {
         int n, s;
         n = scn.nextInt();
         s = scn.nextInt();
-        boolean[][] arr = new boolean[n][n];
+        char[][] arr = new char[n][n];
         Random randomno = new Random();
-
+        boolean t;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                arr[i][j] = randomno.nextBoolean();
+                t = randomno.nextBoolean();
+                if(t){
+                    arr[i][j]='O';
+                }else{
+                    arr[i][j]=' ';
+                }
             }
         }
+        
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.print(arr[i][j]);
