@@ -7,7 +7,7 @@ public class Main {
         n = scn.nextInt();
         s = scn.nextInt();
         char[][] arr = new char[n][n];
-        Random randomno = new Random();
+        Random randomno = new Random(s);
         boolean t;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
